@@ -47,8 +47,29 @@
   font-weight: 500;
   line-height: 50px;
   text-transform: uppercase;
-
   position: relative;
+}
+
+.menu a::after {
+  content: "";
+  background-color: var(--secundary-color);
+  position: absolute;
+  left: 0;
+  top: calc(100% + 4px);
+  width: 100%;
+  height: 4px;
+
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.menu a.selected::after,
+.menu a:hover::after {
+  opacity: 0.8;
+}
+
+.menu a:hover {
+  color: var(--primary-color);
 }
 
 .open-menu,
@@ -85,7 +106,8 @@
 
   .menu a {
     color: var(--text-color-inverse);
-    line-height: 60px;
+    line-height: 70px;
+    font-size: 25px;
   }
 
   .open-menu,
@@ -109,5 +131,14 @@
   .open-menu:focus:not(:focus-visible),
   .close-menu:focus:not(:focus-visible) {
     outline: none;
+  }
+
+  .menu a::after {
+    content: none;
+  }
+
+  .menu a:hover,
+  .menu a.selected {
+    color: var(--secundary-color);
   }
 }
