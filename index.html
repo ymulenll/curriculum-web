@@ -16,6 +16,9 @@
     />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/experiences.css">
     <script defer src="js/app.js"></script>
   </head>
   <body>
@@ -47,5 +50,93 @@
         </ul>
       </nav>
     </header>
+
+    <div class="horizontal-padding vertical-padding">
+      <section class="profile">
+        <div class="profile-info">
+          <h1 class="profile-title">Hola, soy <br />Yoelvis Mulen</h1>
+          <p class="profile-details">
+            Soy un apasionado por la arquitectura y desarrollo de software, con
+            más de 10 años de experiencia en varios lenguajes de programación y
+            tecnologías.
+          </p>
+          <button class="profile-btn">Descargar cv</button>
+        </div>
+        <span class="profile-img-section">
+          <img
+            class="profile-img"
+            src="img/professional-profile.png"
+            alt="programador"
+          />
+          <div class="profile-img-line"></div>
+        </span>
+      </section>
+    </div>
+
+    <section class="experiences">
+      <img src="img/wave.svg" alt="división" class="wave">
+      <div class="experiences-body">
+        <h2 class="experiences-title">Experiencia</h2>
+        <div class="experiences-grid">
+          <div class="empty"></div>
+          <div class="line"></div>
+          <div class="experience">
+            <div class="experience-date">2020-2021</div>
+            <div class="experience-company">Constellation Agency</div>
+            <div class="experience-position">Senior Software Engineer</div>
+            <div class="experience-description">
+              Desarrollo de la interfaz y el back-end de un SaaS usado por
+              cientos de clientes para desplegar anuncios a escala. Usamos
+              React.js, TypeScript, Cypress, Node.js, Serverless y la
+              infraestructura de AWS (entre otras tecnologías).
+            </div>
+          </div>
+          <div class="experience experience_left">
+            <div class="experience-date">2018-2020</div>
+            <div class="experience-company">Modus Create</div>
+            <div class="experience-position">Senior Software Engineer</div>
+            <div class="experience-description">
+              Implementación de una nueva versión de la plataforma que permite
+              de forma inteligente emparejar estudiantes con instituciones
+              educativas. Usamos tecnologías como React.js, GraphQL,
+              ElasticSearch, Node.js y otras que nos permitieron lograr una
+              mejora notable en el rendimiento de la plataforma.
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="empty"></div>
+          <div class="empty"></div>
+          <div class="line"></div>
+          <div class="experience">
+            <div class="experience-date">2016-2018</div>
+            <div class="experience-company">Endava</div>
+            <div class="experience-position">Senior Software Engineer</div>
+            <div class="experience-description">
+              Desarrollado de soluciones para un cliente en la industia
+              inmobiliaria y otro líder en servicios médicos en USA.
+              Implementamos una arquitectura desacoplada usando .Net para el
+              back-end y React.js en el front-end. Además de brindar
+              capacitaciones a la empresa sobre temas como Principios SOLID y
+              DDD.
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="img/wave.svg" alt="división" class="wave wave_bottom">
+    </section>
+
+    <div class="horizontal-padding vertical-padding">
+      <section class="skills">
+        <h2 class="skills-title">Habilidades</h2>
+        <ul class="skills-list">
+          <li class="skills-skill">CSS</li>
+          <li class="skills-skill">HTML</li>
+          <li class="skills-skill">Node.js</li>
+          <li class="skills-skill">React.js</li>
+          <li class="skills-skill">TypeScript</li>
+          <li class="skills-skill">JavaScript</li>
+        </ul>
+      </section>
+    </div>
   </body>
 </html>
