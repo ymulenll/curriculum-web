@@ -53,7 +53,7 @@
 
 .menu a::after {
   content: "";
-  background-color: var(--secundary-color);
+  background-color: var(--secondary-color);
   position: absolute;
   left: 0;
   top: calc(100% + 4px);
@@ -140,6 +140,6 @@
 
   .menu a:hover,
   .menu a.selected {
-    color: var(--secundary-color);
+    color: var(--secondary-color);
   }
 }

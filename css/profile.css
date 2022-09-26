@@ -14,7 +14,7 @@
 }
 
 .profile-img-line {
-  background-color: var(--secundary-color);
+  background-color: var(--secondary-color);
   height: 15px;
   position: absolute;
   width: 100%;
@@ -60,13 +60,13 @@
   .profile-info {
     margin-bottom: 0px;
   }
-  
+
   .profile-img {
     width: 100%;
     max-width: 350px;
     transform: scaleX(-1);
   }
-  
+
   .profile {
     text-align: left;
     display: flex;
@@ -75,16 +75,16 @@
     margin: 0 auto;
     align-items: center;
   }
-  
+
   .profile-title {
     font-size: 60px;
   }
-  
+
   .profile-details {
     font-size: 25px;
     margin: 30px 0;
   }
-  
+
   .profile-btn {
     font-size: 28px;
   }
