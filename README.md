@@ -18,3 +18,6 @@
 
 ### Parte 6: Sección de contacto con CSS Grid
 [![Sección de contacto con CSS Grid](https://img.youtube.com/vi/95IG9wyiyhQ/0.jpg)](https://www.youtube.com/watch?v=95IG9wyiyhQ "Sección de contacto con CSS Grid")
+
+### Parte 7: Cómo desplegar página web GRATIS
+[![Cómo desplegar página web GRATIS](https://img.youtube.com/vi/QJPQ3XdG11s/0.jpg)](https://www.youtube.com/watch?v=QJPQ3XdG11s "Cómo desplegar página web GRATIS")
