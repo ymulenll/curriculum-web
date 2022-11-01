@@ -1,17 +1,40 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yoelvis Mulen</title>
 
-    <meta name="description" content="Currículum Vitae de Yoelvis Mulen" />
-
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
+
+    <script>
+      (function () {
+        const userTheme = localStorage.getItem("theme");
+        const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+        if (userTheme === "dark" || (!userTheme && darkQuery.matches)) {
+          setTheme("dark");
+        }
+
+        darkQuery.addEventListener("change", function (e) {
+          if (!localStorage.getItem("theme"))
+            setTheme(e.matches ? "dark" : "light");
+        });
+
+        function setTheme(newTheme) {
+          document.documentElement.setAttribute("data-theme", newTheme);
+        }
+
+        window.__setUserTheme = function (newTheme) {
+          setTheme(newTheme);
+          localStorage.setItem("theme", newTheme);
+        };
+      })();
+    </script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -29,6 +52,7 @@
     <link rel="stylesheet" href="css/experiences.css" />
     <link rel="stylesheet" href="css/contact.css" />
     <script defer src="js/app.js"></script>
+    <script defer src="js/colorToggle.js"></script>
   </head>
   <body>
     <header class="topheader">
@@ -37,7 +61,7 @@
           <img
             height="50"
             width="50"
-            src="img/youtube-picture.png"
+            src="android-chrome-192x192.png"
             alt="programador"
           />
           <div class="logotype">
@@ -45,9 +69,7 @@
             { code }
           </div>
         </a>
-        <button class="open-menu" aria-label="Abrir menú">
-          <img src="img/hamburger-icon.svg" alt="abrir menú" />
-        </button>
+
         <ul class="menu">
           <button class="close-menu" aria-label="Cerrar menú">
             <img src="img/close-icon.svg" alt="cerrar menú" />
@@ -57,6 +79,43 @@
           <li><a href="#skills">Habilidades</a></li>
           <li><a href="#contact">Contacto</a></li>
         </ul>
+        <button class="dark-mode-btn" aria-label="Activar modo oscuro">
+          <img src="img/sun.svg" alt="" />
+        </button>
+        <button class="light-mode-btn" aria-label="Activar modo claro">
+          <img src="img/moon.svg" alt="" />
+        </button>
+        <button class="open-menu" aria-label="Abrir menú">
+          <svg
+            width="29"
+            height="29"
+            viewBox="0 0 29 29"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2 14.5H27"
+              stroke="currentColor"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M2 2H27"
+              stroke="currentColor"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M2 27H27"
+              stroke="currentColor"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
       </nav>
     </header>
 
@@ -85,7 +144,17 @@
     </div>
 
     <section class="experiences" id="experience">
-      <img src="img/wave.svg" alt="división" class="wave" />
+      <svg
+        class="wave"
+        viewBox="0 0 1400 54"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M-15.0079 22.92C354.732 63.38 953.596 -55.05 1437.13 45.63L1400 55H6.55479e-05L-15.0079 22.92Z"
+          fill="currentColor"
+        />
+      </svg>
       <div class="experiences-body">
         <h2 class="experiences-title">Experiencia</h2>
         <div class="experiences-grid">
@@ -133,7 +202,17 @@
           </div>
         </div>
       </div>
-      <img src="img/wave.svg" alt="división" class="wave wave_bottom" />
+      <svg
+        class="wave wave_bottom"
+        viewBox="0 0 1400 54"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M-15.0079 22.92C354.732 63.38 953.596 -55.05 1437.13 45.63L1400 55H6.55479e-05L-15.0079 22.92Z"
+          fill="currentColor"
+        />
+      </svg>
     </section>
 
     <div class="horizontal-padding vertical-padding">
