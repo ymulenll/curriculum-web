@@ -30,7 +30,7 @@
   font-size: 35px;
   font-weight: bold;
   margin: 0;
-  color: var(--primary-color);
+  color: var(--accent-color);
   font-family: "Noto Sans", sans-serif;
 }
 
@@ -43,8 +43,8 @@
 }
 
 .profile-btn {
-  background-color: var(--primary-color);
-  color: var(--text-color-inverse);
+  background-color: var(--accent-color);
+  color: var(--theme-color);
   border: none;
   font-size: 20px;
   padding: 0.5em 1em;

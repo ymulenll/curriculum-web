@@ -57,10 +57,10 @@
   width: 100%;
   height: 50px;
 
-  background-color: var(--text-color);
+  background-color: var(--primary-color-inverse);
   border-radius: 7px;
   color: var(--text-color-inverse);
-  border: 1px solid var(--theme-color);
+  border: 1px solid var(--text-color-inverse);
 
   cursor: pointer;
 }

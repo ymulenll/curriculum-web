@@ -4,8 +4,45 @@
   --secondary-color: #f7c331;
   --text-color-inverse: white;
   --text-color: black;
-  --navbar-shallow-color: #e5e5e5;
   --menu-mobile-background-color: #3a4460;
+
+  --accent-color: var(--primary-color);
+  --primary-color-inverse: black;
+
+  --navbar-shadow: 0 4px 5px #e5e5e5;
+  --tag-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  --transition: 0.2s ease-in-out;
+
+  color-scheme: light;
+}
+
+/* @media (prefers-color-scheme: dark) { */
+:root[data-theme="dark"] {
+  --theme-color: #0f172a;
+  --primary-color: #243043;
+  --secondary-color: #9dc8db;
+  --text-color: rgba(255, 255, 255, 0.87);
+  --text-color-inverse: var(--text-color);
+  --menu-mobile-background-color: #18213e;
+
+  --accent-color: var(--secondary-color);
+  --navbar-shadow: 0 1px rgba(51, 65, 85, 0.8);
+  --tag-shadow: 0 0 0 1px #ffffff;
+
+  color-scheme: dark;
+}
+/* } */
+
+form {
+  color-scheme: light;
+}
+
+* {
+  transition: background-color var(--transition), box-shadow var(--transition);
+}
+
+svg {
+  transition: color var(--transition);
 }
 
 html {
